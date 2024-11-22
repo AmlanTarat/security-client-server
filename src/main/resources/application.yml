@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://issuer-uri/oauth2/afagfa
+
+okta:
+  client:
+    enable: true
+  server:
+    enable: true
+
+okta-sever-security:
+    -paths: /order/secured
+    scopes: read
+    -paths: /order-line/secured
+    scopes: read
+    -paths: /inventory/secured
+    scopes: read
+
+okta-client-credentials:
+  test-api:
+    client-id: fafafa
+    client-secret: afafafa
+    issuer-uri: fafafaf
+    scopes: read
+
+
+
